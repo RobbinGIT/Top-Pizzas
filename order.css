@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', arial, sans-serif;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+   background: #3c7e16;
+   padding: 0 !important;
+}
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.navbarleft{
+    margin-left: 1000px;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+/* order form */
+#variety, #makeOrder {
+    padding: 2em;
+}
+
+#order {
+    display:flex;
+    flex-direction: row;
+    background-color: #8fc073;
+    font-size: 15px;
+    
+}
+
+.orderText {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
+
+.form, .displayOrder {
+    box-sizing: border-box;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 50%;
+    color: white; 
+}
+
+label {
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+ .displayOrder {
+   width: 50%;
+   height: 260px;
+   position: relative;
+   display: none; 
+   margin-top: 0;
+   margin-left: 600px;
+   padding-top: 0;
+   border: 5px solid #3c7e16;
+   
+}
+
+
+th {
+    border: 2px solid rgb(255, 255, 255);
+}
+td{
+    color:white;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+#bill {
+    height: 30px;
+    font-size: X-large;
+    font-weight: 700;
+
+}
+ 
+.form2{
+    border: 5px solid #3c7e16;
+  margin-left: 25%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .form2 {
+        margin-left: 0;
+    }
+  }
+
+
+ footer {
+	background-color: #3c7e16;
+	line-height: 130px;
+	text-align: center;
+}
+
+footer p {
+	line-height: 120px;
+	color: #fff;
+	margin-top: 5px;
+}
+
+footer p em {
+	font-style: normal;
+	font-weight: 500;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+footer ul li i {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	text-align: center;
+	line-height: 36px!important;
+	background-color: #fff;
+	border-radius: 50%;
+	color: #363e50;
+	transition: all 0.5s;
+}
+
+footer ul li i:hover {
+	background-color: #f2745f;	
+}

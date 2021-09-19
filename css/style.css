@@ -1,0 +1,650 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.primary-button a {
+	display: inline-block;
+	background-color: #11df6e;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+
+.primary-white-button a {
+	display: inline-block;
+	background-color: #fff;
+	color: #cf280a;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+
+.border-button a {
+	display: inline-block;
+	background-color: transparent;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	border: 1px solid #fff;
+}
+
+
+.header {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+	background: #8fc073;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+   background: #3c7e16;
+   padding: 0 !important;
+}
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 700;
+    float: right;
+    text-align: left;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+
+}
+
+.banner {
+	padding: 180px 0px;
+	background-image: url(img/banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+}
+
+.banner h4 {
+	margin-top: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.banner h2 {
+	font-family: 'Spectral', serif;
+	font-size: 44px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.banner p {
+	color: #fff;
+	font-size: 14px;
+}
+
+.banner .primary-button {
+	margin-top: 30px;
+}
+
+section.Delicious-pizzas {
+	padding: 50px 0;
+    padding-left: 200px;
+	background: #8fc073;
+
+}
+
+.Delicious-pizzas .first-image {
+	margin-right: -30px;
+	margin-top: 18%;
+}
+
+.Delicious-pizzas .first-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.Delicious-pizzas .second-image {
+	margin-left: -30px;
+	margin-top: 18%;
+}
+
+.Delicious-pizzas .second-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.Delicious-pizzas .cook-content {
+	background-color: #41e92098;
+	text-align: center;
+	padding: 30px;
+}
+
+.Delicious-pizzas .cook-content h4 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.cook-content .contact-content {
+	background-color: #5ad115;
+	padding: 20px 30px;
+}
+
+.cook-content .contact-content span {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1px;
+	border: none;
+	width: auto;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.cook-content .contact-content h6 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.5px;
+}
+
+.cook-content span {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing: 1px;
+	display: inline-block;
+	line-height: 25px;
+}
+
+
+section.availableoffers {
+	padding-bottom: 100px;
+	background: #8fc073;
+}
+section.availableoffers h2 a{
+	text-decoration: none;
+	color: white;
+}
+.availableoffers .service-item  a {
+	text-decoration: none;
+}
+
+.availableoffers .service-item {
+	text-align: center;
+}
+
+.availableoffers .service-item img {
+	max-width: 100%;
+	overflow: hidden;
+	border: 10px solid #eaf0ff;
+	border-radius: 50%;
+}
+
+.availableoffers .service-item h4 {
+	margin-top: 20px;
+	font-size: 22px;
+	color: #121212;
+	font-family: 'Spectral', serif;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+
+
+section.sign-up {
+	padding: 80px 0px;
+	background-image: url(../img/signup-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+}
+
+
+.sign-up .heading h2 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.sign-up button {
+	margin-left: -30px;
+	display: inline-block;
+	background-color: transparent;
+	color: #fff!important;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	border: 1px solid #fff;
+}
+
+.sign-up input {
+	height: 44px;
+	border: 3px;
+	background-color: rgba(250, 250, 250, 0.9);
+	color: #5a5a5a!important;
+	box-shadow: none!important;
+	outline: none!important;
+}
+.emailinput{
+    margin-left: 33%;
+    margin-bottom: 20px;
+}
+
+
+
+footer {
+	background-color: #3c7e16;
+	line-height: 130px;
+	text-align: center;
+}
+
+footer p {
+	line-height: 120px;
+	color: #fff;
+	margin-top: 5px;
+}
+
+footer p em {
+	font-style: normal;
+	font-weight: 500;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+footer ul li i {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	text-align: center;
+	line-height: 36px!important;
+	background-color: #fff;
+	border-radius: 50%;
+	color: #363e50;
+	transition: all 0.5s;
+}
+
+footer ul li i:hover {
+	background-color: #f2745f;	
+}
+
+
+section.page-heading {
+	padding: 80px 0px;
+	background-image: url(../img/heading-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center; 
+}
+
+.page-heading h1 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-family: 'Spectral', serif;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.page-heading p {
+	color: #fff;
+	font-size: 14px;
+	padding: 0px 25%;
+	margin-bottom: 0px;
+}
+
+
+section.breakfast-menu {
+	margin-top: 100px;
+}
+
+section.breakfast-menu .price {
+	right: 15px;
+}
+
+.breakfast-menu-content {
+	background-color: #f2f6ff;
+	padding: 30px 0px 30px 30px;
+}
+
+.breakfast-menu-content .left-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.breakfast-menu-content .left-image {
+	margin: -30px 0px -30px -30px;
+}
+
+.breakfast-menu-content #owl-breakfast {
+	margin-left: -15px;
+}
+
+.breakfast-menu-content h2 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+	font-family: 'Spectral', serif;
+	font-size: 28px;
+	width: 94.5%;
+	border-bottom: 1px solid #d9dde5;
+	color: #121212;
+}
+
+
+
+section.lunch-menu {
+	margin-top: 100px;
+}
+
+section.lunch-menu .price {
+	right: 15px;
+}
+
+.lunch-menu-content {
+	background-color: #f2f6ff;
+	padding: 30px 0px 30px 30px;
+}
+
+.lunch-menu-content .left-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.lunch-menu-content .left-image {
+	margin: -30px 0px -30px -30px;
+}
+
+.lunch-menu-content #owl-lunch {
+	margin-left: -15px;
+}
+
+.lunch-menu-content h2 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+	font-family: 'Spectral', serif;
+	font-size: 28px;
+	width: 94.5%;
+	border-bottom: 1px solid #d9dde5;
+	color: #121212;
+}
+
+
+
+section.dinner-menu {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+section.dinner-menu .price {
+	right: 15px;
+}
+
+.dinner-menu-content {
+	background-color: #f2f6ff;
+	padding: 30px 0px 30px 30px;
+}
+
+.dinner-menu-content .left-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.dinner-menu-content .left-image {
+	margin: -30px 0px -30px -30px;
+}
+
+.dinner-menu-content #owl-dinner {
+	margin-left: -15px;
+}
+
+.dinner-menu-content h2 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+	font-family: 'Spectral', serif;
+	font-size: 28px;
+	width: 94.5%;
+	border-bottom: 1px solid #d9dde5;
+	color: #121212;
+}
+
+
+
+
+@media (max-width: 991px) {
+	.contact-info {
+		margin-top: 80px;
+	}
+	.Delicious-pizzas .first-image {
+		margin-right: 0px;
+		margin-top: 0%;
+		padding: 0px 10%;
+	}
+	.Delicious-pizzas .second-image {
+		margin-left: 0px;
+		margin-top: 0%;
+		padding: 0px 10%;
+	}
+	.availableoffers .service-item {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.right-info {
+		height: auto;
+		background-color: #fff;
+		margin-left: 0px;
+		padding: 30px;
+	}
+	.right-info button {
+		margin-top: 30px;
+	}
+	
+	.sign-up button {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	footer {
+		background-color: #363e50;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	footer p {
+		line-height: 60px;
+		color: #fff;
+		margin-top: 5px;
+	}
+	.breakfast-menu-content .left-image {
+		margin: -30px 0px 30px -30px;
+	}
+	.lunch-menu-content .left-image {
+		margin: -30px 0px -30px -30px;
+	}
+	.lunch-menu-content .owl-pagination {
+	  padding-bottom: 60px;
+	}
+	.dinner-menu-content .left-image {
+		margin: -30px 0px 30px -30px;
+	}
+	.page-heading p {
+		padding: 0px 5%;
+
+	}
+}
+
+@media (max-width: 768px) {
+    #main-nav {
+		padding: 0px 0px;
+		float: none;
+	    position: relative;
+	    left: 0%;
+	    text-align: center;
+	    overflow: hidden;
+	    background-color: rgba(250, 250, 250, 0.5);
+	    margin: 0px -15px;
+	    border-top: none;
+	}
+	.nav {
+		list-style:none;
+	    position:relative;
+	    left: 0%;
+	    overflow: hidden;
+	}
+
+	
+	.Delicious-pizzas .first-image {
+		margin-right: 0px;
+		margin-top: 0%;
+		padding: 0px 10%;
+	}
+	.Delicious-pizzas .second-image {
+		margin-left: 0px;
+		margin-top: 0%;
+		padding: 0px 10%;
+	}
+	.availableoffers .service-item {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.right-info {
+		height: auto;
+		background-color: #fff;
+		margin-left: 0px;
+		padding: 30px;
+	}
+	.right-info select {
+		margin-top: 30px;
+	}
+	.right-info select.person {
+		margin-top: 0px;
+	}
+	.right-info button {
+		margin-top: 30px;
+	}
+	.blog-post img {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.blog-post {
+		margin-bottom: 30px;
+	}
+
+	.blog-post .right-content {
+		background-color: #fff;
+		width: 100%;
+		float: none;
+		padding: 20px;
+	}
+	.sign-up button {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	footer {
+		background-color: #363e50;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	footer p {
+		line-height: 60px;
+		color: #fff;
+		margin-top: 5px;
+	}
+	.breakfast-menu-content .left-image {
+		margin: -30px 0px 30px -30px;
+	}
+	.lunch-menu-content .left-image {
+		margin: -30px 0px -30px -30px;
+	}
+	.dinner-menu-content .left-image {
+		margin: -30px 0px 30px -30px;
+	}
+	.page-heading p {
+		padding: 0px 5%;
+
+	}
+	.contact-info {
+		margin-top: 80px;
+	}
+}
+@media (max-width: 480px) {
+
+}

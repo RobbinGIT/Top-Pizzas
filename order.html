@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script/order.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Lovers+Quarrel&family=Pacifico&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+        
+    <title>Document</title>
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="logo text-light"><a href="index.html">TOP-PIZZAS</a> </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbarleft">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Our Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+    <!-- Order section -->
+    <section id="order">
+       
+        <div id="makeOrder" class="container">
+            <h2 class="text-center text-light">MAKE ORDER</h2>
+            <div class="row form">
+               
+                <div class="col-md-6 form2">
+                    <div class="form-group">
+                        
+                        <div class="form-group">
+                            <label for="name">Quantity</label>
+                            <input type="number" class="form-control form-select-lg mb-3" name="" id="quantity">
+                        </div>
+
+                        <label for="name">Pizza Type</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="type">
+                            <option value="0">Pepperoni</option>
+                            <option value="1">Veggie-Pizza</option>
+                            <option value="2">Margherita</option>
+                            <option value="3">Chicken Tikka</option>
+                            <option value="4">Hawaiian</option>
+                            <option value="5">Periperi</option>
+                            <option value="6">Meat-Pizza</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Size</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="size">
+                           
+                            <option value="0">Small</Small></option>
+                            <option value="1">Medium</option>
+                            <option value="2">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Crust</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crust">
+                          
+                            <option value="0">Crispy</Small></option>
+                            <option value="1">Stuffed</option>
+                            <option value="2">Gluten free</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Toppings (Press & Hold Control to Choose Multiple)</label>
+                      <select class="form-select form-select-lg mb-1" aria-label=".form-select-lg" id="topping" multiple>
+                           
+                            <option value=" 0">Onions</Small></option>
+                            <option value=" 1">Mashrooms</option>
+                            <option value=" 2">Extra cheese</option>
+                            <option value=" 3">Fresh basil</option>
+                            <option value=" 4">Green Pepper</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6">
+                   
+                        <div class="form-group radioBtn">
+                            <label for="deliver">Delivery or Pickup?</label>
+                            <div>
+                                <input type="radio" id="yes" name="deliver">
+                                <label for="no">Yes</label>
+                                <input type="radio" id="no" name="deliver">
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+                        <div class="form-group location">
+                            <label for="name">Add Your Address</label>
+                            <input type="text" class="form-control form-select-lg mb-3" name="" id="location">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="button" id="addToCart" value="Add to Cart">
+                    </div>
+                </div>
+              
+            </div>
+            
+            <div class="displayOrder table-responsive container">
+                <table class="table">
+                    <thead class="table-primary">
+                        <th>Flavor</th>
+                        <th>Size</th>
+                        <th>Crust</th>
+                        <th>Toppings</th>
+                        <th>Quantity</th>
+                        <th id="billPerOrder">Total</th>
+    
+                    </thead>
+                    <tr></tr>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div>
+                    <div class="form-group text-center">
+                        <p id="bill"><span id="result"></span></p>
+                        <p id="bill"> <span id="totalCost"></span></p>
+                    </div>
+                    <div class="form-group text-center">
+                        <input class="btn btn-primary" type="button" id="checkout" value="Proceed to Checkout">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="copyright">&copy;2021 TOP-PIZZAS. All Rights Reserved</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>For Number One Pizza</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
