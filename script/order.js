@@ -110,6 +110,7 @@ function totalBill() {
     });
     if (document.getElementById('yes').checked) {
         var result = "Your order is Ksh. " + summation + " delivery charge is 100ksh";
+    
         var orderBill = summation + 100;
         var total = "Total: Ksh. " + orderBill + " .00";
         $('#result').text(result);
@@ -128,7 +129,7 @@ function totalBill() {
 //checking out
 function checkout() {
     swal({
-        title: "You have successfully placed your order." + "\r\n" + "Thank You Customer",
+        title: "You have successfully placed your order." + "\r\n" + "Thank You Customer",  
     }).then((value) => {
         Address.reload();
     });
