@@ -31,7 +31,7 @@ Order.prototype.getTopping = function () {
     else if (this.topping === 4) {
         return 100
     }
-    
+
 }
 
 
@@ -195,4 +195,4 @@ $(document).ready(function () {
     $('#checkout').click(function () {
         checkout();
     })
-})
+});
