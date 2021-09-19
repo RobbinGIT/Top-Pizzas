@@ -98,7 +98,7 @@ ul {
 
 .banner {
 	padding: 180px 0px;
-	background-image: url(img/banner-bg.jpg);
+	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;

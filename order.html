@@ -16,8 +16,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script/order.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Lovers+Quarrel&family=Pacifico&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Lovers+Quarrel&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
         
     <title>Document</title>
@@ -53,10 +52,11 @@
             <div class="row form">
                
                 <div class="col-md-6 form2">
+                
                     <div class="form-group">
                         
                         <div class="form-group">
-                            <label for="name">Quantity</label>
+                            <label for="name">Quantity of Pizza</label>
                             <input type="number" class="form-control form-select-lg mb-3" name="" id="quantity">
                         </div>
 
@@ -72,18 +72,17 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="name">Size</label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="size">
-                           
+                        <label for="name">Size of Pizza</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="size" size="3">
                             <option value="0">Small</Small></option>
                             <option value="1">Medium</option>
                             <option value="2">Large</option>
                         </select>
                     </div>
+                   
                     <div class="form-group">
-                        <label for="name">Crust</label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crust">
-                          
+                        <label for="name">Type of Crust</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crust" size="3">
                             <option value="0">Crispy</Small></option>
                             <option value="1">Stuffed</option>
                             <option value="2">Gluten free</option>
@@ -91,8 +90,7 @@
                     </div>
                     <div class="form-group">
                         <label for="name">Toppings (Press & Hold Control to Choose Multiple)</label>
-                      <select class="form-select form-select-lg mb-1" aria-label=".form-select-lg" id="topping" multiple>
-                           
+                      <select class="form-select form-select-lg mb-1" aria-label=".form-select-lg" id="topping" size="5" multiple>
                             <option value=" 0">Onions</Small></option>
                             <option value=" 1">Mashrooms</option>
                             <option value=" 2">Extra cheese</option>
@@ -108,9 +106,9 @@
                             <label for="deliver">Delivery or Pickup?</label>
                             <div>
                                 <input type="radio" id="yes" name="deliver">
-                                <label for="no">Yes</label>
+                                <label for="no">Delivered</label>
                                 <input type="radio" id="no" name="deliver">
-                                <label for="no">No</label>
+                                <label for="no">Pickup</label>
                             </div>
                         </div>
                         <div class="form-group location">
@@ -120,7 +118,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input class="btn btn-primary" type="button" id="addToCart" value="Add to Cart">
+                        <input class="btn btn-danger" type="button" id="addToCart" value="Add to Cart">
                     </div>
                 </div>
               
@@ -147,7 +145,7 @@
                         <p id="bill"> <span id="totalCost"></span></p>
                     </div>
                     <div class="form-group text-center">
-                        <input class="btn btn-primary" type="button" id="checkout" value="Proceed to Checkout">
+                        <input class="btn btn-danger" type="button" id="checkout" value="Proceed to Checkout">
                     </div>
                 </div>
             </div>
