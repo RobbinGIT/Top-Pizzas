@@ -34,7 +34,7 @@ Order.prototype.getTopping = function () {
 }
 
 
-//getting the price of size
+//getting the price of pizza size
 Order.prototype.getSize = function () {
 
     var count = $("#topping :selected").length;
@@ -43,19 +43,19 @@ Order.prototype.getSize = function () {
 
     if (this.type == 0) {
         if (count === 0) {
-            return 600
+            return 500
         } else if (count === 1)
-            return 1000
+            return 900
         else {
-            return 1500
+            return 1400
         }
     } else if (this.type == 1) {
         if (count === 0) {
-            return 300
+            return 350
         } else if (count === 1)
-            return 800
+            return 850
         else {
-            return 2000
+            return 1800
         }
     } else if (this.type == 2) {
         if (count === 0) {
@@ -96,7 +96,7 @@ Order.prototype.getSize = function () {
 
 
 //calculating the total cost of pizza
-function fullBill() {
+function totalBill() {
     var sum = 0;
     $(".billPerOrder").each(function () {
         var value = $(this).text();
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
         //validations of input fields
         if (type == '' || size == '' || crust == '' || topping == '' || quantity == '' || name == '') {
-            alert('Please make a complete order first')
+            alert('Fill in all fields to complete an order')
         } else if (document.getElementById("yes").checked && $('#location').val() == '') {
             alert('Please fill out your Address')
         } else {
@@ -186,7 +186,7 @@ $(document).ready(function () {
                 "<td>" + $('#quantity').val() + "</td>" +
                 "<td><span class='billPerOrder'>" + pizzaBill + "</span></td>" +
                 "</tr>");
-            $(fullBill);
+            $(totalBill);
         }
     })
     $('#checkout').click(function () {
