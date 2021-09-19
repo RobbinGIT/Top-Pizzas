@@ -31,13 +31,14 @@ Order.prototype.getTopping = function () {
     else if (this.topping === 4) {
         return 100
     }
+    
 }
 
 
 //getting the price of pizza size
 Order.prototype.getSize = function () {
 
-    var count = $("#topping :selected").length;
+    var count = $("#topping :selected").length;  //topppings array
 
     // alert(count);
 
@@ -49,6 +50,7 @@ Order.prototype.getSize = function () {
         else {
             return 1400
         }
+        // alert(count);
     } else if (this.type == 1) {
         if (count === 0) {
             return 350
@@ -57,6 +59,7 @@ Order.prototype.getSize = function () {
         else {
             return 1800
         }
+        // alert(count);
     } else if (this.type == 2) {
         if (count === 0) {
             return 500
@@ -65,6 +68,7 @@ Order.prototype.getSize = function () {
         else {
             return 2500
         }
+        // alert(count);
     } else if (this.type == 3) {
         if (count === 0) {
             return 600
@@ -73,6 +77,7 @@ Order.prototype.getSize = function () {
         else {
             return 2500
         }
+        // alert(count);
     } else if (this.type == 4) {
         if (count === 0) {
             return 500
