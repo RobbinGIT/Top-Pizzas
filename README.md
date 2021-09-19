@@ -5,7 +5,7 @@ This is a pizza web application where customers order different sizes of pizzas 
 Robbin Mwangi Githimbo
 
 ## Description and Requirements
-This is web application customers order different sizes of pizzas with one or more toppings. 
+In this web application customers order different sizes of pizzas with one or more toppings. Then there are able to choose wether they want their pizza delivered to their door step or not. 
 
 The following are requirements in order to continue....
 
