@@ -101,16 +101,16 @@ Order.prototype.getSize = function () {
 
 //calculating the total cost of pizza
 function totalBill() {
-    var sum = 0;
+    var summation = 0;
     $(".billPerOrder").each(function () {
         var value = $(this).text();
         if (!isNaN(value) && value.length != 0) {
-            sum += parseFloat(value);
+            summation += parseFloat(value);
         }
     });
     if (document.getElementById('yes').checked) {
-        var result = "Your order is Ksh. " + sum + " delivery charge is 100ksh";
-        var orderBill = sum + 100;
+        var result = "Your order is Ksh. " + summation + " delivery charge is 100ksh";
+        var orderBill = summation + 100;
         var total = "Total: Ksh. " + orderBill + " .00";
         $('#result').text(result);
         $('#totalCost').text(total);
@@ -120,7 +120,7 @@ function totalBill() {
         })
 
     } else {
-        var total = "Total: Ksh. " + sum + " .00";
+        var total = "Total: Ksh. " + summation + " .00";
         $('#totalCost').text(total)
     }
 }
