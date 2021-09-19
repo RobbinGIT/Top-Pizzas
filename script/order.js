@@ -78,7 +78,7 @@ Order.prototype.getSize = function () {
             return 2500
         }
         // alert(count);
-    } else if (this.type == 4) {
+    }  else if (this.type == 4) {
         if (count === 0) {
             return 500
         } else if (count === 1)
@@ -96,9 +96,8 @@ Order.prototype.getSize = function () {
         }
     } else {
         return false;
-    }
+    }  
 }
-
 
 //calculating the total cost of pizza
 function totalBill() {
