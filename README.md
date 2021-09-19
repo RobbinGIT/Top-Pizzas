@@ -5,7 +5,7 @@ This is a pizza web application where customers order different sizes of pizzas 
 Robbin Mwangi Githimbo
 
 ## Description and Requirements
-This is web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+This is web application customers order different sizes of pizzas with one or more toppings. 
 
 The following are requirements in order to continue....
 
