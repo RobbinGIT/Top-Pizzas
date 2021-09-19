@@ -169,8 +169,6 @@ $(document).ready(function () {
             var selectedCrust = parseInt($('#crust option:selected').val());
             var quantity = parseInt($('#quantity').val());
             var selectedTopping = parseInt($('#topping option:selected').val());
-
-            
             var newOrder = new Order(selectedType, selectedSize, selectedCrust, selectedTopping);
 
             //total selling price per of everyh order
