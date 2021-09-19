@@ -63,7 +63,7 @@
     padding: 20px;
 }
 
-.form, .displayOrder {
+.form, .displayOrder{
     box-sizing: border-box;
     margin-top: 10px;
     position: relative;
@@ -84,7 +84,7 @@ label {
    height: 260px;
    position: relative;
    display: none; 
-   margin-top: 154px;
+   margin-top: 200px;
    padding-top: 0;
    border: 5px solid #3c7e16;
    
