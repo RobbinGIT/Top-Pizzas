@@ -126,7 +126,7 @@ function checkout() {
     swal({
         title: "You have successfully placed your order." + "\r\n" + "Thank You Customer",
     }).then((value) => {
-        location.reload();
+        Address.reload();
     });
 }
 //navigation
@@ -144,9 +144,9 @@ $(document).ready(function () {
     //display the address for delivery
     $('.radioBtn').change(function () {
         if (document.getElementById("yes").checked) {
-            $('.location').show();
+            $('.Address').show();
         } else {
-            $('.location').hide();
+            $('.Address').hide();
         }
     });
 
@@ -162,7 +162,7 @@ $(document).ready(function () {
         if (type == '' || size == '' || crust == '' || topping == '' || quantity == '' || name == '') {
             alert('Please make a complete order first')
         } else if (document.getElementById("yes").checked && $('#location').val() == '') {
-            alert('Please fill out your location')
+            alert('Please fill out your Address')
         } else {
             var selectedType = parseInt($('#type option:selected').val());
             var selectedSize = parseInt($('#size option:selected').val());
