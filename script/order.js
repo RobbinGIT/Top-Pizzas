@@ -172,7 +172,7 @@ $(document).ready(function () {
             var newOrder = new Order(selectedType, selectedSize, selectedCrust, selectedTopping);
 
             //total selling price per of everyh order
-            var pizzaBill = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
+            var theBill = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
 
             //append the data to the table
             $('.displayOrder').show();
@@ -182,7 +182,7 @@ $(document).ready(function () {
                 "<td>" + $('#crust option:selected').text() + "</td>" +
                 "<td>" + $('#topping option:selected').text() + "</td>" +
                 "<td>" + $('#quantity').val() + "</td>" +
-                "<td><span class='billPerOrder'>" + pizzaBill + "</span></td>" +
+                "<td><span class='billPerOrder'>" + theBill + "</span></td>" +
                 "</tr>");
             $(totalBill);
         }
