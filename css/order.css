@@ -120,6 +120,22 @@ td{
     }
   }
 
+  @media screen and (max-width: 992px) {
+    .form2 {
+        margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .form2 {
+        margin-left: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .form2 {
+        margin-left: 0;
+    }
+  }
 
  footer {
 	background-color: #3c7e16;
