@@ -188,15 +188,13 @@ $(document).ready(function () {
                 "<td><span class='totalAmntperoder'>" + theBill + "</span></td>" +
                 "<td><input type='button' class='delete-item' value='x'/> </td>" +
                 "</tr>");
-
-            $('#myOrder').on('click','.delete-item',function(){
-            $(this).closest('li').remove();// remove the closest item row
-            });
-
             $(totalBill);
 
         }
     })
+    
+    
+
     $('#checkout').click(function () {
         checkout();
     })
