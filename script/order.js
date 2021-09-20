@@ -1,4 +1,3 @@
-
 function Order(type, size, crust, topping) {
     this.type = type;
     this.size = size;
@@ -102,7 +101,7 @@ Order.prototype.getSize = function () {
 //calculating the total cost of pizza
 function totalBill() {
     var summation = 0;
-    $(".billPerOrder").each(function () {
+    $(".totalAmntperoder").each(function () {
         var value = $(this).text();
         if (!isNaN(value) && value.length != 0) {
             summation += parseFloat(value);
@@ -186,9 +185,16 @@ $(document).ready(function () {
                 "<td>" + $('#crust option:selected').text() + "</td>" +
                 "<td>" + $('#topping option:selected').text() + "</td>" +
                 "<td>" + $('#quantity').val() + "</td>" +
-                "<td><span class='billPerOrder'>" + theBill + "</span></td>" +
+                "<td><span class='totalAmntperoder'>" + theBill + "</span></td>" +
+                "<td><input type='button' class='delete-item' value='x'/> </td>" +
                 "</tr>");
+
+            $('#myOrder').on('click','.delete-item',function(){
+            $(this).closest('li').remove();// remove the closest item row
+            });
+
             $(totalBill);
+
         }
     })
     $('#checkout').click(function () {
