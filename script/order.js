@@ -179,7 +179,7 @@ $(document).ready(function () {
             var theBill = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
 
             //append the data to the table
-            $('.displayOrder').show();
+            $('.finalOrder').show();
             $(".table tbody:last").append("<tr>" +
                 "<td>" + $('#type option:selected').text() + "</td>" +
                 "<td>" + $('#size option:selected').text() + "</td>" +
