@@ -153,7 +153,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#addToCart').click(function () {
+    $('#inCart').click(function () {
         var type = $('#type option:selected').val();
         var size = $('#size option:selected').val();
         var crust = $('#crust option:selected').val();
